@@ -154,6 +154,14 @@ export default function Pricing({ user, products, subscription }: Props) {
                 currency: price.currency!,
                 minimumFractionDigits: 0
               }).format((price?.unit_amount || 0) / 100);
+              const yearlyMonthlyString =
+                billingInterval === 'year'
+                  ? new Intl.NumberFormat('en-US', {
+                      style: 'currency',
+                      currency: price.currency!,
+                      minimumFractionDigits: 0
+                    }).format((price?.unit_amount || 0) / 100 / 12)
+                  : null;
               return (
                 <div
                   key={product.id}
@@ -182,6 +190,11 @@ export default function Pricing({ user, products, subscription }: Props) {
                         /{billingInterval}
                       </span>
                     </p>
+                    {yearlyMonthlyString && (
+                      <p className="mt-1 text-sm text-zinc-400">
+                        {yearlyMonthlyString}/mo, billed yearly
+                      </p>
+                    )}
                     <Button
                       variant="slim"
                       type="button"
