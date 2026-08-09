@@ -25,7 +25,8 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-.env
+# `.env` holds committed, non-secret placeholder defaults so a clean checkout
+# can lint and build; real values go in `.env.local`, which stays ignored.
 .env.local
 .env.development.local
 .env.test.local

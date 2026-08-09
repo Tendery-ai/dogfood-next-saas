@@ -1,0 +1,13 @@
+{
+  // Committed so `next lint` does not drop into its interactive setup prompt,
+  // which hangs a non-interactive run.
+  "extends": "next/core-web-vitals",
+  "rules": {
+    // Pre-existing violations in the upstream template (conditional useRouter
+    // in the auth forms, unescaped apostrophes). Kept visible as warnings
+    // rather than fixed: they are realistic repo mess, and a green baseline is
+    // what lets a run's lint result mean "the change is clean".
+    "react-hooks/rules-of-hooks": "warn",
+    "react/no-unescaped-entities": "warn"
+  }
+}
