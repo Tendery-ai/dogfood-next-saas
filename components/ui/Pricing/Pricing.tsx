@@ -170,6 +170,11 @@ export default function Pricing({ user, products, subscription }: Props) {
                   )}
                 >
                   <div className="p-6">
+                    {product.name === 'Pro' && (
+                      <span className="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wide text-white uppercase rounded-full bg-pink-500">
+                        Most popular
+                      </span>
+                    )}
                     <h2 className="text-2xl font-semibold leading-6 text-white">
                       {product.name}
                     </h2>
