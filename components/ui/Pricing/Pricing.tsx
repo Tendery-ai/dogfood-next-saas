@@ -170,9 +170,16 @@ export default function Pricing({ user, products, subscription }: Props) {
                   )}
                 >
                   <div className="p-6">
-                    <h2 className="text-2xl font-semibold leading-6 text-white">
-                      {product.name}
-                    </h2>
+                    <div className="flex items-center justify-between gap-2">
+                      <h2 className="text-2xl font-semibold leading-6 text-white">
+                        {product.name}
+                      </h2>
+                      {product.name === 'Pro' && (
+                        <span className="inline-flex items-center rounded-full bg-pink-500 px-3 py-1 text-xs font-semibold text-white">
+                          Most popular
+                        </span>
+                      )}
+                    </div>
                     <p className="mt-4 text-zinc-300">{product.description}</p>
                     <p className="mt-8">
                       <span className="text-5xl font-extrabold white">
