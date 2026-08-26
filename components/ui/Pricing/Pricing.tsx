@@ -108,7 +108,7 @@ export default function Pricing({ user, products, subscription }: Props) {
         <div className="max-w-6xl px-4 py-8 mx-auto sm:py-24 sm:px-6 lg:px-8">
           <div className="sm:flex sm:flex-col sm:align-center">
             <h1 className="text-4xl font-extrabold text-white sm:text-center sm:text-6xl">
-              Pricing Plans
+              Ship your product — not your billing.
             </h1>
             <p className="max-w-2xl m-auto mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl">
               Start building for free, then add a site plan to go live. Account
