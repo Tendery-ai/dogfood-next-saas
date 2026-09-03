@@ -196,6 +196,40 @@ export default function Pricing({ user, products, subscription }: Props) {
               );
             })}
           </div>
+          <div className="max-w-3xl mx-auto mt-16 sm:mt-24">
+            <h2 className="text-3xl font-extrabold text-white sm:text-center sm:text-4xl">
+              Frequently Asked Questions
+            </h2>
+            <dl className="mt-8 space-y-8">
+              <div>
+                <dt className="text-lg font-semibold text-white">
+                  Can I change my plan later?
+                </dt>
+                <dd className="mt-2 text-zinc-300">
+                  Yes. You can upgrade or downgrade your plan at any time, and
+                  your billing will be adjusted accordingly.
+                </dd>
+              </div>
+              <div>
+                <dt className="text-lg font-semibold text-white">
+                  Is there a free trial?
+                </dt>
+                <dd className="mt-2 text-zinc-300">
+                  You can start building for free and add a paid plan whenever
+                  you are ready to go live.
+                </dd>
+              </div>
+              <div>
+                <dt className="text-lg font-semibold text-white">
+                  Can I cancel my subscription anytime?
+                </dt>
+                <dd className="mt-2 text-zinc-300">
+                  Absolutely. You can cancel your subscription at any time from
+                  your account settings with no hidden fees.
+                </dd>
+              </div>
+            </dl>
+          </div>
           <LogoCloud />
         </div>
       </section>
