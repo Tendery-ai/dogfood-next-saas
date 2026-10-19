@@ -244,6 +244,10 @@ Note that webhook forwarding and the development server must be running concurre
 
 Finally, navigate to [http://localhost:3000](http://localhost:3000) in your browser to see the application rendered.
 
+## Contributing
+
+To contribute, open a pull request against the `main` branch.
+
 ## Going live
 
 ### Archive testing products
