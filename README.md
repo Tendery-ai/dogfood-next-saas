@@ -90,10 +90,10 @@ Stripe Checkout currently supports pricing that bills a predefined amount at a s
 
 For example, you can create business models with different pricing tiers, e.g.:
 
-- Product 1: Hobby
+- Product 1: Solo
   - Price 1: 10 USD per month
   - Price 2: 100 USD per year
-- Product 2: Freelancer
+- Product 2: Small Team
   - Price 1: 20 USD per month
   - Price 2: 200 USD per year
 
