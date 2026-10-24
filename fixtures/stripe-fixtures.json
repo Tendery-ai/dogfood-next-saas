@@ -8,8 +8,8 @@
       "path": "/v1/products",
       "method": "post",
       "params": {
-        "name": "Hobby",
-        "description": "Hobby product description",
+        "name": "Solo",
+        "description": "For one person getting started. Plan your work, keep everything in one place and get things done without the clutter.",
         "metadata": {
           "index": 0
         }
@@ -50,8 +50,8 @@
       "path": "/v1/products",
       "method": "post",
       "params": {
-        "name": "Freelancer",
-        "description": "Freelancer product description",
+        "name": "Small Team",
+        "description": "For small teams working together. Everything in Solo, plus shared work so everyone sees the same thing.",
         "metadata": {
           "index": 1
         }

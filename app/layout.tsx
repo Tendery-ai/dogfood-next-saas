@@ -6,8 +6,9 @@ import { PropsWithChildren, Suspense } from 'react';
 import { getURL } from '@/utils/helpers';
 import 'styles/main.css';
 
-const title = 'Next.js Subscription Starter';
-const description = 'Brought to you by Vercel, Stripe, and Supabase.';
+const title = 'Simple pricing for small teams';
+const description =
+  'Pick the plan that fits how your team works, and pay monthly or yearly.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(getURL()),
